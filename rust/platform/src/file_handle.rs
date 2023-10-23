@@ -64,7 +64,6 @@ pub enum ShareMode {
 /// `FileHandle` provides safe creation and automatic cleanup of Windows file handles, leveraging Rust's ownership model.
 
 /// `FileHandle` struct that wraps a native Windows `HANDLE` object
-#[cfg(target_os = "windows")]
 pub struct FileHandle {
     handle: HANDLE,
 }
